@@ -278,79 +278,82 @@
       <!--sidebar end-->
       
       <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
+       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
+      
       <section id="main-content">
           <section class="wrapper">
-          <h3><i class="fa fa-angle-right"></i> Chartjs Charts</h3>
-              <!-- page start-->
-              <div class="tab-pane" id="chartjs">
-                  <div class="row mt">
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Doughnut</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="doughnut" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Line</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="line" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row mt">
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Radar</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="radar" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Polar Area</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="polarArea" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row mt">
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Bar</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="bar" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-							  <h4><i class="fa fa-angle-right"></i> Pie</h4>
-                              <div class="panel-body text-center">
-                                  <canvas id="pie" height="300" width="400"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- page end-->
-          </section>          
+      		<div class="row mt">
+      			<div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="showback">
+        <h4><i class="fa fa-angle-right"></i> Create Carpet Items</h4>
+        <form>
+            <div class="form-group">
+                <label for="carpetName">Carpet Name</label>
+                <input type="text" class="form-control" id="carpetName" placeholder="Enter carpet name">
+            </div>
+            <div class="form-group">
+                <label for="carpetDescription">Carpet Description</label>
+                <textarea class="form-control" id="carpetDescription" rows="3" placeholder="Enter carpet description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="selectCarpetCategory">Select Carpet Category</label>
+                <select class="form-control" id="selectCarpetCategory">
+                    <!-- Populate this dropdown with carpet categories from Use Case 5 -->
+                    <option>Tabriz Carpet</option>
+                    <option>Isfahan Carpet</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="carpetLength">Carpet Length</label>
+                <input type="text" class="form-control" id="carpetLength" placeholder="Enter carpet length">
+            </div>
+            <!-- Add other input fields for carpet details as described in your use case -->
+            <div class="form-group">
+                <label for="carpetImages">Upload Carpet Images (at least 3)</label>
+                <input type="file" class="form-control-file" id="carpetImages" multiple accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="itemQuantity">Item Quantity</label>
+                <input type="number" class="form-control" id="itemQuantity" placeholder="Enter item quantity">
+            </div>
+            <div class="form-group">
+                <label for="countryOfOrigin">Country of Origin</label>
+                <select class="form-control" id="countryOfOrigin">
+                    <!-- Populate this dropdown with country options -->
+                    <option>Country 1</option>
+                    <option>Country 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="associateSupplier">Associate Supplier(s)</label>
+                <select class="form-control" id="associateSupplier" multiple>
+                    <!-- Populate this dropdown with supplier options -->
+                    <option>Supplier 1</option>
+                    <option>Supplier 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <!-- You can use the "multiple" attribute to allow selecting multiple suppliers -->
+            </div>
+            <button type="submit" class="btn btn-primary">Create Carpet Item</button>
+        </form>
+    </div>
+</div>
+
+      			
+      		</div><!--/ row -->
+          </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is  <a href="http://h2design.taobao.com/" target="_blank">Դ��֮��</a>
-              <a href="chartjs.html#" class="go-top">
+              2023 - <a href="http://h2design.taobao.com/" target="_blank">Zahra’s Carpet Paradise</a>
+              <a href="buttons.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -360,6 +363,7 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jjquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
@@ -370,8 +374,6 @@
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
-    <script src="assets/js/chart-master/Chart.js"></script>
-    <script src="assets/js/chartjs-conf.js"></script>
     
   <script>
       //custom select box

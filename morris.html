@@ -280,59 +280,49 @@
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
-      <!--main content start-->
+     <!--main content start-->
       <section id="main-content">
-          <section class="wrapper site-min-height">
-          <h3><i class="fa fa-angle-right"></i> Morris Charts</h3>
-              <!-- page start-->
-              <div id="morris">
-                  <div class="row mt">
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-                              <h4><i class="fa fa-angle-right"></i> Chart Example 1</h4>
-                              <div class="panel-body">
-                                  <div id="hero-graph" class="graph"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-                              <h4><i class="fa fa-angle-right"></i> Chart Example 2</h4>
-                              <div class="panel-body">
-                                  <div id="hero-bar" class="graph"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row mt">
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-                              <h4><i class="fa fa-angle-right"></i> Chart Example 3</h4>
-                              <div class="panel-body">
-                                  <div id="hero-area" class="graph"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="content-panel">
-                              <h4><i class="fa fa-angle-right"></i> Chart Example 4</h4>
-                              <div class="panel-body">
-                                  <div id="hero-donut" class="graph"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- page end-->
-          </section>
+          <section class="wrapper">
+      		<div class="row mt">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="showback">
+        <h4><i class="fa fa-angle-right"></i> Create Carpet Category</h4>
+        <form>
+            <div class="form-group">
+                <label for="categoryName">Carpet Category Name</label>
+                <input type="text" class="form-control" id="categoryName" placeholder="Enter category name">
+            </div>
+            <div class="form-group">
+                <label for="categoryDescription">Carpet Category Description</label>
+                <textarea class="form-control" id="categoryDescription" rows="3" placeholder="Enter category description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="associateSupplier">Associate Supplier(s)</label>
+                <select class="form-control" id="associateSupplier" multiple>
+                    <!-- Populate this dropdown with supplier options -->
+                    <option>Supplier 1</option>
+                    <option>Supplier 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <!-- You can use the "multiple" attribute to allow selecting multiple suppliers -->
+            </div>
+            <button type="submit" class="btn btn-primary">Create Category</button>
+        </form>
+    </div>
+</div>
+
+      		
+      			
+      		</div><!--/ row -->
+          </section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is  <a href="http://h2design.taobao.com/" target="_blank">Դ��֮��</a>
-              <a href="morris.html#" class="go-top">
+              2023 - <a href="http://h2design.taobao.com/" target="_blank">Zahra’s Carpet Paradise</a>
+              <a href="general.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -342,6 +332,7 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jjquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
@@ -349,12 +340,11 @@
 
 
     <!--common script for all pages-->
-	<script src="js/raphael-min.js"></script>
-	<script src="js/morris-0.4.3.min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
-    <script src="assets/js/morris-conf.js"></script>
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
     
   <script>
       //custom select box
