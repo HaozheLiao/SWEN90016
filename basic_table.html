@@ -288,8 +288,21 @@
         <h4><i class="fa fa-angle-right"></i> Create Carpet Category</h4>
         <form>
             <div class="form-group">
-                <label for="categoryName">Carpet Category Name</label>
-                <input type="text" class="form-control" id="categoryName" placeholder="Enter category name">
+                <label for="selectCarpetCategory">Select Carpet Category</label>
+                <select class="form-control" id="selectCarpetCategory">
+                    <!-- Populate this dropdown with carpet categories from Use Case 5 -->
+                    <option>Tabriz Carpet</option>
+                    <option>Isfahan Carpet</option>
+                    <option>Kashan Carpet</option>
+                    <option>Heriz Carpet</option>
+                    <option>Qom / Qum / Ghom Carpet</option>
+                    <option>Nain Carpet</option>
+                    <option>Kilim Carpet</option>
+                    <option>Sultanabad / Arak Carpet</option>
+                    <option>Kerman Carpet</option>
+                    <option> Serapi Carpet</option>
+                    <!-- Add more options as needed -->
+                </select>
             </div>
             <div class="form-group">
                 <label for="categoryDescription">Carpet Category Description</label>
@@ -299,12 +312,14 @@
                 <label for="associateSupplier">Associate Supplier(s)</label>
                 <select class="form-control" id="associateSupplier" multiple>
                     <!-- Populate this dropdown with supplier options -->
-                    <option>Supplier 1</option>
-                    <option>Supplier 2</option>
+                    <option>Celestial Carpets Inc.</option>
+                    <option>TerraFibers Co.</option>
+                    <option>Urban Loom Studios</option>
                     <!-- Add more options as needed -->
                 </select>
                 <!-- You can use the "multiple" attribute to allow selecting multiple suppliers -->
             </div>
+                    <!-- Add more options as needed -->
             <button type="submit" class="btn btn-primary">Create Category</button>
         </form>
     </div>
