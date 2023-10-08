@@ -1267,6 +1267,12 @@ PANELS CONFIGURATIONS
 	font-weight: 900;
 }
 
+/*carpet image 1*/
+.carpet-image1 {
+	background: url(../img/c1.jpg) no-repeat center center;
+	text-align: center;
+	background-position: center center;
+}
 
 /* Instagram Panel*/
 .instagram-panel {
@@ -1358,7 +1364,7 @@ PANELS CONFIGURATIONS
 
 /* BLOG PANEL */
 #blog-bg {
-	background: url(../img/blog-bg.jpg) no-repeat center top;
+	background: url(../img/c4.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
