@@ -13,11 +13,12 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="assets/js/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
         
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/chart-master/Chart.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,7 +39,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>DASHGUM FREE</b></a>
+            <a href="main_menu.html" class="logo"><b>Zahra’s Carpet Paradise</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -55,7 +56,7 @@
                                 <p class="green">You have 4 pending tasks</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <div class="task-info">
                                         <div class="desc">DashGum Admin Panel</div>
                                         <div class="percent">40%</div>
@@ -68,7 +69,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <div class="task-info">
                                         <div class="desc">Database Update</div>
                                         <div class="percent">60%</div>
@@ -81,7 +82,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <div class="task-info">
                                         <div class="desc">Product Development</div>
                                         <div class="percent">80%</div>
@@ -94,7 +95,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <div class="task-info">
                                         <div class="desc">Payments Sent</div>
                                         <div class="percent">70%</div>
@@ -114,7 +115,7 @@
                     <!-- settings end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="sales_dashboard.html#">
                             <i class="fa fa-envelope-o"></i>
                             <span class="badge bg-theme">5</span>
                         </a>
@@ -124,7 +125,7 @@
                                 <p class="green">You have 5 new messages</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Zac Snider</span>
@@ -136,7 +137,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Divya Manian</span>
@@ -148,7 +149,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Dan Rogers</span>
@@ -160,7 +161,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="sales_dashboard.html#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Dj Sherman</span>
@@ -172,7 +173,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">See all messages</a>
+                                <a href="sales_dashboard.html#">See all messages</a>
                             </li>
                         </ul>
                     </li>
@@ -197,69 +198,48 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Marcel Newman</h5>
-              	  	
+                  <p class="centered"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></p>
+              	  <h5 class="centered">Baxter Waverly</h5>
+                  
                   <li class="mt">
-                      <a href="index.html">
+                      <a class="active" href="main_menu.html" >
+                          <i class="fa fa-home"></i>
+                          <span>Main Menu</span>
+                      </a>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="customer_information.html">
+                          <i class="fa fa-user"></i>
+                          <span>Customer Information</span>
+                      </a>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cube"></i>
+                          <span>Carpet Information</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="carpet_category.html">Carpet Categories</a></li>
+                          <li><a  href="carpet_items.html">Carpet Items</a></li>
+                      </ul>
+                  </li>  
+                  
+                  <li class="sub-menu">
+                      <a href="shopping_cart.html">
+                          <i class="fa fa-shopping-cart"></i>
+                          <span>Shopping Cart</span>
+                      </a>
+                  </li>    
+                  
+                  <li class="sub-menu">
+                      <a href="sales_dashboard.html">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>Sales Dashboard</span>
                       </a>
                   </li>
-
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
-                          <li><a  href="buttons.html">Buttons</a></li>
-                          <li><a  href="panels.html">Panels</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="sub-menu">
-                      <a class="active" href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
-                          <span>Components</span>
-                      </a>
-                      <ul class="sub">
-                          <li class="active"><a  href="calendar.html">Calendar</a></li>
-                          <li><a  href="gallery.html">Gallery</a></li>
-                          <li><a  href="todo_list.html">Todo List</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
-                          <span>Extra Pages</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Forms</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="form_component.html">Form Components</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
-                      </ul>
-                  </li>
+                  
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class=" fa fa-bar-chart-o"></i>
@@ -276,54 +256,160 @@
           </div>
       </aside>
       <!--sidebar end-->
-
+      
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> Calendar</h3>
-              <!-- page start-->
-              <div class="row mt">
-                  <aside class="col-lg-3 mt">
-                      <h4><i class="fa fa-angle-right"></i> Draggable Events</h4>
-                      <div id="external-events">
-                          <div class="external-event label label-theme">My Event 1</div>
-                          <div class="external-event label label-success">My Event 2</div>
-                          <div class="external-event label label-info">My Event 3</div>
-                          <div class="external-event label label-warning">My Event 4</div>
-                          <div class="external-event label label-danger">My Event 5</div>
-                          <div class="external-event label label-default">My Event 6</div>
-                          <div class="external-event label label-theme">My Event 7</div>
-                          <div class="external-event label label-info">My Event 8</div>
-                          <div class="external-event label label-success">My Event 9</div>
-                          <p class="drop-after">
-                              <input type="checkbox" id="drop-remove">
-                              Remove After Drop
-                          </p>
-                      </div>
-                  </aside>
-                  <aside class="col-lg-9 mt">
-                      <section class="panel">
-                          <div class="panel-body">
-                              <div id="calendar" class="has-toolbar"></div>
-                          </div>
-                      </section>
-                  </aside>
-              </div>
-              <!-- page end-->
+          <section class="wrapper site-min-height">
+          	<h3><i class="fa fa-angle-right"></i> Discover Us & Shopping</h3>
+          	<div class="row mt">
+          		<div class="col-lg-12">
+          		
+					<! -- 1st ROW OF PANELS -->
+					<div class="row">						
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">							
+							<div class="product-panel-2 pn" style="background-image: url('img/c2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+								<div class="badge badge-hot" style="margin-top: 20px;">HOT</div>
+								<h5 class="mt">Carpet 1</h5>
+								<h6 style="color: whitesmoke; font-size: large; font-weight:bolder;">TOTAL SALES: 1388</h6>
+								<button class="btn btn-small btn-theme04" style="margin-top: 140px;">View</button>
+							</div>
+							
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">							
+							<div class="product-panel-2 pn" style="background-image: url('img/c2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+								<div class="badge badge-hot" style="margin-top: 20px;">HOT</div>
+								<h5 class="mt">Carpet 1</h5>
+								<h6 style="color: whitesmoke; font-size: large; font-weight:bolder;">TOTAL SALES: 1388</h6>
+								<button class="btn btn-small btn-theme04" style="margin-top: 140px;">View</button>
+							</div>
+							
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<div class="content-panel pn" style="margin-top: 25px;">
+								<div id="blog-bg">
+									<div class="badge badge-popular" style="margin-top: 20px; font-size: 5px;">POPULAR</div>
+									<div class="blog-title">Star Product</div>
+								</div>
+								<div class="blog-text">
+									<p> <a href="#">Read More</a></p>
+								</div>
+							</div>
+						</div><!-- /col-md-4-->
+						
+					</div><! --/END 1ST ROW OF PANELS -->
+					
+					<! -- 2ND ROW OF PANELS -->
+					<div class="row">
+						<! -- TODO PANEL -->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<div class="steps pn">
+							    <input id='op1' name='op1' type='checkbox' checked/>
+							    <label for='op1'>Update Profile</label>
+							    <input id='op2' name='op2' type='checkbox'/>
+							    <label for='op2'>Shopping</label>
+							    <input id='op3' name='op3' type='checkbox'/>
+							    <label for='op3'>Enjoy Life</label>
+							    <input type='submit' value='All Done!' id='submit'/>
+							</div>
+						</div><! --/col-md-4 -->
+						
+						<! -- PROFILE 01 PANEL -->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<div class="content-panel pn">
+								<div id="profile-01">
+									<h3>Sharon Holmes</h3>
+									<h6>Best Seller</h6>
+								</div>
+								<div class="profile-01 centered">
+									<p>ADD TO CONTACT LIST</p>
+								</div>
+								<div class="centered">
+									<h6><i class="fa fa-envelope"></i><br/>SHARON@ZARAS_CARPET.COM</h6>
+								</div>
+							</div><! --/content-panel -->
+						</div><! --/col-md-4 -->
+						
+						<! -- PROFILE 02 PANEL -->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<!-- INSTAGRAM PANEL -->
+							<div class="instagram-panel pn">
+								<i class="fa fa-instagram fa-4x"></i>
+								<p>@ZARAS_CARPET<br/>
+									5 min. ago
+								</p>
+								<p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+							</div>
+						</div><!-- /col-md-4 -->
+						
+						
+					</div><! --/END 2ND ROW OF PANELS -->
+					
+					<! -- 3RD ROW OF PANELS -->
+					<!-- Product Panel -->
+					<div class="row">
+						<!-- TWITTER PANEL -->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<div class="twitter-panel pn">
+								<i class="fa fa-twitter fa-4x"></i>
+								<p style="font-size: larger;">Welcome to ZARAS_CARPET! Take a look and enjoy.</p>
+								<p class="user">@ZARAS_CARPET</p>
+							</div>
+						</div><!-- /col-md-4 -->	
+						
+						<! -- Spotify Panel -->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							<div class="content-panel pn">
+								<div id="spotify">
+									<div class="col-xs-4 col-xs-offset-8">
+										<button class="btn btn-sm btn-clear-g">FOLLOW</button>
+									</div>
+									<div class="sp-title">
+										<h3>Brand Ambassador: LORDE</h3>
+									</div>
+									<div class="play">
+										<i class="fa fa-play-circle"></i>
+									</div>
+								</div>
+								<p class="followers"><i class="fa fa-user"></i> 576,000 FOLLOWERS</p>
+							</div>
+						</div><! --/col-md-4-->
+						<div class="col-lg-4 col-md-4 col-sm-4 mb">
+							
+							<div class="content-panel pn">
+								<div id="profile-02">
+									<div class="user">
+										<img src="assets/img/friends/fr-06.jpg" class="img-circle" width="80">
+										<h4>After-sales service</h4>
+									</div>
+								</div>
+								<div class="pr2-social centered">
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-dribbble"></i></a>
+								</div>
+							</div><! --/panel -->
+						</div><!--/ col-md-4 -->
+						
+					</div><! -- END 3RD ROW OF PANELS --> 				
+          		</div>
+          	</div>
+			
 		</section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
+      <!--  **********************************************************************************************************************************************************
+      MAIN CONTENT NOTIFICATION
+      *********************************************************************************************************************************************************** -->      
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is  <a href="http://h2design.taobao.com/" target="_blank">Դ��֮��</a>
-              <a href="calendar.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
+              &copy; 2023 SWEN90016 T08_G07 - All Rights Reserved
+              <br>
+              Authors: Xingyu Zhao, Haozhe Liao, Dongyu LANG, and Xuan Liu
           </div>
       </footer>
       <!--footer end-->
@@ -331,25 +417,24 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-	<script src="assets/js/fullcalendar/fullcalendar.min.js"></script>    
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-
+    <script src="assets/js/jquery.sparkline.js"></script>
 
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
-	<script src="assets/js/calendar-conf-events.js"></script>    
-  
+    <script src="assets/js/sparkline-chart.js"></script>    
+    
+    
   <script>
       //custom select box
 
       $(function(){
-          $("select.styled").customSelect();
+          $('select.styled').customSelect();
       });
 
   </script>
