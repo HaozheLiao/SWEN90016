@@ -29,17 +29,28 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
             if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
-            	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: test.html");
-		        exit();
+            	if($row['id'] == 3) { // Check if the user's ID is 3
+	            	$_SESSION['user_name'] = $row['user_name'];
+	            	$_SESSION['name'] = $row['name'];
+	            	$_SESSION['id'] = $row['id'];
+	            	header("Location: SWEN90016\admin_main_menu.html");
+		            exit();
+	            } 
+
+				
+				else {
+	            	$_SESSION['user_name'] = $row['user_name'];
+	            	$_SESSION['name'] = $row['name'];
+	            	$_SESSION['id'] = $row['id'];
+	            	header("Location: SWEN90016\customer_main_menu.html");
+		            exit();
+	            }
             }else{
-				header("Location: index.php?error=Incorect User name or password");
+				header("Location: index.php?error=Incorrect User name or password");
 		        exit();
 			}
 		}else{
-			header("Location: index.php?error=Incorect User name or password");
+			header("Location: index.php?error=Incorrect User name or password");
 	        exit();
 		}
 	}
