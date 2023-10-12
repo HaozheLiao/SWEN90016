@@ -111,56 +111,37 @@
  MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-      		<div class="row mt">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-    <div class="showback">
-        <h4><i class="fa fa-angle-right"></i> Create Carpet Category</h4>
-        <form>
-            <div class="form-group">
-                <label for="selectCarpetCategory">Select Carpet Category</label>
-                <select class="form-control" id="selectCarpetCategory">
-                    <!-- Populate this dropdown with carpet categories from Use Case 5 -->
-                    <option>Tabriz Carpet</option>
-                    <option>Isfahan Carpet</option>
-                    <option>Kashan Carpet</option>
-                    <option>Heriz Carpet</option>
-                    <option>Qom / Qum / Ghom Carpet</option>
-                    <option>Nain Carpet</option>
-                    <option>Kilim Carpet</option>
-                    <option>Sultanabad / Arak Carpet</option>
-                    <option>Kerman Carpet</option>
-                    <option> Serapi Carpet</option>
-                    <!-- Add more options as needed -->
-                </select>
+        <section id="main-content">
+          <section class="wrapper site-min-height">
+            <h3><i class="fa fa-angle-right"></i> Create Carpet Categories</h3>
+            <div class="row mt">
+              <div class="col-lg-5 col-lg-offset-3">
+                <div class="showback">
+                  <h4>Carpet Category Details</h4>
+                  <form action="your_action_here" method="post">
+                    <div class="form-group">
+                      <label for="carpetCategoryName">Category Name</label>
+                      <input type="text" class="form-control" id="carpetCategoryName" name="carpetCategoryName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="categoryDescription">Category Description</label>
+                      <textarea class="form-control" id="categoryDescription" name="categoryDescription" rows="3" placeholder="Enter category description"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="supplierName">Supplier Name(s)</label>
+                      <input type="text" class="form-control" id="supplierName" name="supplierName" placeholder="Enter supplier name(s) separated by commas" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="isKitCategory">Is it a Kit Category?</label>
+                      <input type="checkbox" class="form-check-input" id="isKitCategory" name="isKitCategory" value="kit">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Category</button>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="categoryDescription">Carpet Category Description</label>
-                <textarea class="form-control" id="categoryDescription" rows="3" placeholder="Enter category description"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="associateSupplier">Associate Supplier(s)</label>
-                <select class="form-control" id="associateSupplier" multiple>
-                    <!-- Populate this dropdown with supplier options -->
-                    <option>Celestial Carpets Inc.</option>
-                    <option>TerraFibers Co.</option>
-                    <option>Urban Loom Studios</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <!-- You can use the "multiple" attribute to allow selecting multiple suppliers -->
-            </div>
-                    <!-- Add more options as needed -->
-            <button type="submit" class="btn btn-primary">Create Category</button>
-        </form>
-    </div>
-</div>
-
-      		
-      			
-      		</div><!--/ row -->
-          </section><! --/wrapper -->
-      </section><!-- /MAIN CONTENT -->
+          </section><!-- /wrapper -->
+        </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
       <!--footer start-->

@@ -7,16 +7,19 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Customer, Theme, Responsive, Fluid, Retina">
 
-    <title>CarpetIT - Customer Information (Admin)</title>
+    <title>CarpetIT - Category Categories (Customer)</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-        
+    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.js"></script>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -37,7 +40,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="admin_main_menu.html" class="logo"><b>Zahra’s Carpet Paradise</b></a>
+            <a href="customer_main_menu.html" class="logo"><b>Zahra’s Carpet Paradise</b></a>
             <!--logo end-->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
@@ -57,48 +60,34 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
                   <p class="centered"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></p>
-              	  <h5 class="centered">Admin Name</h5>
+              	  <h5 class="centered">Customer Name</h5>
                   
                   <li class="mt">
-                      <a href="admin_main_menu.html">
+                      <a href="customer_main_menu.html">
                           <i class="fa fa-home"></i>
                           <span>Main Menu</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="active" href="admin_customer_information.html">
+                      <a href="customer_information.html">
                           <i class="fa fa-user"></i>
                           <span>Customer Information</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a class="active" href="customer_carpet.html">
                           <i class="fa fa-cube"></i>
                           <span>Carpet</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="admin_create_categories.html">Create Categories</a></li>
-                          <li><a  href="admin_create_items.html">Create Items</a></li>
-                      </ul>
-                  </li>  
-                  
-                  <li class="sub-menu">
-                      <a href="admin_sales_dashboard.html">
-                          <i class="fa fa-dashboard"></i>
-                          <span>Sales Dashboard</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class=" fa fa-bar-chart-o"></i>
-                          <span>Charts</span>
+                      <a href="customer_shopping_cart.html" >
+                          <i class="fa fa-shopping-cart"></i>
+                          <span>Shopping Cart</span>
                       </a>
-                      <ul class="sub">
-                          <li><a  href="admin_morris.html">Morris</a></li>
-                      </ul>
                   </li>
 
               </ul>
@@ -112,61 +101,78 @@
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper site-min-height">
-          	<h3><i class="fa fa-angle-right"></i> Customer Information</h3>
-            <div class="row mt">
-                <div class="col-lg-5 col-lg-offset-3">
-                    <h4>Customer Details</h4>
-                    <form action="your_action_here" method="post">
-                        <div class="form-group">
-                            <label for="customerName">Name</label>
-                            <input type="text" class="form-control" id="customerName" name="customerName" required>
+    <section class="wrapper site-min-height">
+        <h3><i class="fa fa-angle-right"></i> Gallery</h3>
+        <hr>
+        <div class="row mt">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="photo">
+                            <a href="customer_carpet_item.html"><img class="img-responsive" src="img/c1.png" alt="" style="width: 400px; height: 273px;"></a>
+                            <p class="photo-text">Carpet Deluxe</p>
                         </div>
-                        <div class="form-group">
-                            <label for="customerAge">Age</label>
-                            <input type="number" class="form-control" id="customerAge" name="customerAge" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="customerEmail">E-mail</label>
-                            <input type="email" class="form-control" id="customerEmail" name="customerEmail" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="shippingAddress">Shipping Address</label>
-                            <textarea class="form-control" id="shippingAddress" name="shippingAddress" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="billingAddress">Billing Address</label>
-                            <textarea class="form-control" id="billingAddress" name="billingAddress" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="primaryContact">Primary Contact Number</label>
-                            <input type="tel" class="form-control" id="primaryContact" name="primaryContact" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="secondaryContact">Secondary Contact Number</label>
-                            <input type="tel" class="form-control" id="secondaryContact" name="secondaryContact">
-                        </div>
-                        <div class="form-group">
-                            <label for="idDocument">Identifying Document (e.g., National Identity Card)</label>
-                            <input type="file" class="form-control" id="idDocument" name="idDocument" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="newsletterPref">Newsletter Preference</label>
-                            <select class="form-control" id="newsletterPref" name="newsletterPref">
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="monthly">Monthly</option>
-                                <option value="saleEvents">Sale Events</option>
-                                <option value="noSubscription">No Subscription</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-			
-		</section><! --/wrapper -->
-      </section><!-- /MAIN CONTENT -->
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="photo">
+                            <a href="#"><img class="img-responsive" src="img/c2.jpg" alt="" style="width: 400px; height: 273px;"></a>
+                            <p class="photo-text">Carpet Elegance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="photo">
+                            <a href="#"><img class="img-responsive" src="img/c3.jpg" alt="" style="width: 400px; height: 273px;"></a>
+                            <p class="photo-text">Carpet Modern</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="photo">
+                            <a href="#"><img class="img-responsive" src="img/c4.jpg" alt="" style="width: 400px; height: 273px;"></a>
+                            <p class="photo-text">Carpet Vintage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="photo">
+                            <a href="#"><img class="img-responsive" src="img/c5.jpg" alt="" style="width: 400px; height: 273px;"></a>
+                            <p class="photo-text">Carpet Classic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/wrapper-->
+</section><!-- /MAIN CONTENT -->
+
+      <style>
+          .photo-text {
+              font-size: 24px; /* 调整为您想要的大小 */
+              text-align: center; /* 使文本居中 */
+              margin-top: 10px; /* 根据需要调整，以确保文本与图片之间有适当的间距 */
+          }
+
+      </style>
 
       <!--main content end-->
       <!-- **********************************************************************************************************************************************************
@@ -184,10 +190,8 @@
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
+	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
@@ -197,12 +201,20 @@
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
-    
+  
+  <script type="text/javascript">
+      $(function() {
+        //    fancybox
+          jQuery(".fancybox").fancybox();
+      });
+
+  </script>
+  
   <script>
       //custom select box
 
       $(function(){
-          $('select.styled').customSelect();
+          $("select.styled").customSelect();
       });
 
   </script>

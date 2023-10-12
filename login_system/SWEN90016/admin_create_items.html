@@ -112,72 +112,105 @@
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
       
-      <section id="main-content">
-          <section class="wrapper">
-      		<div class="row mt">
-      			<div class="col-lg-6 col-md-6 col-sm-12">
-    <div class="showback">
-        <h4><i class="fa fa-angle-right"></i> Create Carpet Items</h4>
-        <form>
-            <div class="form-group">
-                <label for="carpetName">Carpet Name</label>
-                <input type="text" class="form-control" id="carpetName" placeholder="Enter carpet name">
+        <section id="main-content">
+          <section class="wrapper site-min-height">
+            <h3><i class="fa fa-angle-right"></i> Create Carpet Items</h3>
+            <div class="row mt">
+              <div class="col-lg-5 col-lg-offset-3">
+                <div class="showback">
+                  <h4>Carpet Item Details</h4>
+                  <form action="your_action_here" method="post">
+                    <div class="form-group">
+                      <label for="carpetName">Carpet Name</label>
+                      <input type="text" class="form-control" id="carpetName" name="carpetName" required placeholder="Enter carpet name">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetDescription">Carpet Description</label>
+                      <textarea class="form-control" id="carpetDescription" name="carpetDescription" rows="3" placeholder="Enter carpet description"></textarea>
+                    <div class="form-group">
+                      <label for="selectCarpetCategory">Select Carpet Category</label>
+                      <select class="form-control" id="selectCarpetCategory" name="selectCarpetCategory">
+                        <option value="Tabriz">Tabriz Carpet</option>
+                        <option value="Isfahan">Isfahan Carpet</option>
+                        <option value="Kashan">Kashan Carpet</option>
+                        <option value="Heriz">Heriz Carpet</option>
+                        <option value="QomGhom">Qom / Qum / Ghom Carpet</option>
+                        <option value="Nain">Nain Carpet</option>
+                        <option value="Kilim">Kilim Carpet</option>
+                        <option value="SultanabadArak">Sultanabad / Arak Carpet</option>
+                        <option value="Kerman">Kerman Carpet</option>
+                        <option value="Serapi">Serapi Carpet</option>
+                        <option value="Kit">Kit (Carpet Kit Items)</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetLength">Carpet Length</label>
+                      <input type="text" class="form-control" id="carpetLength" name="carpetLength" required placeholder="Enter carpet length">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetBreadth">Carpet Breadth</label>
+                      <input type="text" class="form-control" id="carpetBreadth" name="carpetBreadth" required placeholder="Enter carpet breadth">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetWeight">Carpet Weight</label>
+                      <input type="text" class="form-control" id="carpetWeight" name="carpetWeight" required placeholder="Enter carpet weight">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetDimensions">Carpet Dimensions</label>
+                      <input type="text" class="form-control" id="carpetDimensions" name="carpetDimensions" required placeholder="Enter carpet dimensions">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetColor">Carpet Color</label>
+                      <input type="text" class="form-control" id="carpetColor" name="carpetColor" required placeholder="Enter carpet color">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetPattern">Carpet Pattern</label>
+                      <input type="text" class="form-control" id="carpetPattern" name="carpetPattern" required placeholder="Enter carpet pattern">
+                    </div>
+                    <div class="form-group">
+                      <label for="dominantColor1">Dominant Color 1 (in the pattern)</label>
+                      <input type="text" class="form-control" id="dominantColor1" name="dominantColor1" required placeholder="Enter dominant color 1">
+                    </div>
+                    <div class="form-group">
+                      <label for="dominantColor2">Dominant Color 2 (in the pattern)</label>
+                      <input type="text" class="form-control" id="dominantColor2" name="dominantColor2" required placeholder="Enter dominant color 2">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetSize">Carpet Size</label>
+                      <input type="text" class="form-control" id="carpetSize" name="carpetSize" required placeholder="Enter carpet size (e.g., XL, XXL)">
+                    </div>
+                    <div class="form-group">
+                      <label for="carpetImages">Upload Carpet Images (at least 3)</label>
+                      <input type="file" class="form-control-file" id="carpetImages" name="carpetImages" multiple accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="itemQuantity">Item Quantity</label>
+                      <input type="number" class="form-control" id="itemQuantity" name="itemQuantity" required placeholder="Enter item quantity">
+                    </div>
+                    <div class="form-group">
+                      <label for="countryOfOrigin">Country of Origin</label>
+                      <select class="form-control" id="countryOfOrigin" name="countryOfOrigin">
+                        <!-- Populate this dropdown with country options -->
+                        <option>Country 1</option>
+                        <option>Country 2</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="associateSupplier">Associate Supplier(s)</label>
+                      <input type="text" class="form-control" id="associateSupplier" name="associateSupplier" placeholder="Enter supplier name(s) separated by commas" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Carpet Item</button>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="carpetDescription">Carpet Description</label>
-                <textarea class="form-control" id="carpetDescription" rows="3" placeholder="Enter carpet description"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="selectCarpetCategory">Select Carpet Category</label>
-                <select class="form-control" id="selectCarpetCategory">
-                    <!-- Populate this dropdown with carpet categories from Use Case 5 -->
-                    <option>Tabriz Carpet</option>
-                    <option>Isfahan Carpet</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="carpetLength">Carpet Length</label>
-                <input type="text" class="form-control" id="carpetLength" placeholder="Enter carpet length">
-            </div>
-            <!-- Add other input fields for carpet details as described in your use case -->
-            <div class="form-group">
-                <label for="carpetImages">Upload Carpet Images (at least 3)</label>
-                <input type="file" class="form-control-file" id="carpetImages" multiple accept="image/*">
-            </div>
-            <div class="form-group">
-                <label for="itemQuantity">Item Quantity</label>
-                <input type="number" class="form-control" id="itemQuantity" placeholder="Enter item quantity">
-            </div>
-            <div class="form-group">
-                <label for="countryOfOrigin">Country of Origin</label>
-                <select class="form-control" id="countryOfOrigin">
-                    <!-- Populate this dropdown with country options -->
-                    <option>Country 1</option>
-                    <option>Country 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="associateSupplier">Associate Supplier(s)</label>
-                <select class="form-control" id="associateSupplier" multiple>
-                    <!-- Populate this dropdown with supplier options -->
-                    <option>Supplier 1</option>
-                    <option>Supplier 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <!-- You can use the "multiple" attribute to allow selecting multiple suppliers -->
-            </div>
-            <button type="submit" class="btn btn-primary">Create Carpet Item</button>
-        </form>
-    </div>
-</div>
+          </section><!-- /wrapper -->
+        </section><!-- /MAIN CONTENT -->
 
-      			
-      		</div><!--/ row -->
-          </section><! --/wrapper -->
-      </section><!-- /MAIN CONTENT -->
-
+   
+      
       <!--main content end-->
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT NOTIFICATION
