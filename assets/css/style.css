@@ -1255,14 +1255,17 @@ PANELS CONFIGURATIONS
 	text-align: center;
 }
 .twitter-panel i {
+    font-size: 50px;
 	color: white;
 	margin-top: 40px;
 }
 .twitter-panel p {
+    font-size: 20px;
 	color: #f5f5f5;
 	margin: 10px;
 }
 .twitter-panel .user {
+    font-size: 20px;
 	color: white;
 	font-weight: 900;
 }
@@ -1270,7 +1273,7 @@ PANELS CONFIGURATIONS
 
 /* Instagram Panel*/
 .instagram-panel {
-	background: url(../img/instagram.jpg) no-repeat center top;
+	background: url(../img/c7.jpg) no-repeat center top;
 	text-align: center;
 	background-position: center center;
 }
@@ -1280,6 +1283,7 @@ PANELS CONFIGURATIONS
 }
 .instagram-panel p {
 	margin: 5px;
+    font-size: 20px;
 	color: white;
 }
 
@@ -1358,7 +1362,7 @@ PANELS CONFIGURATIONS
 
 /* BLOG PANEL */
 #blog-bg {
-	background: url(../img/blog-bg.jpg) no-repeat center top;
+	background: url(../img/c4.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1531,7 +1535,7 @@ PANELS CONFIGURATIONS
 
 /* Profile 02*/
 #profile-02 {
-	background: url(../img/profile-02.jpg) no-repeat center top;
+	background: url(../img/c8.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1551,6 +1555,7 @@ PANELS CONFIGURATIONS
 	text-align: center;
 }
 #profile-02 h4 {
+    font-size: 30px;
 	color: white;
 	margin:0px;
 	padding-top: 8px;
