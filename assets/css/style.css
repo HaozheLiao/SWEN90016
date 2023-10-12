@@ -230,6 +230,10 @@ ul.top-menu > li > .logout {
     height: 100%;
     position: fixed;
     background: #424a5d;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 1;
 }
 
 #sidebar h5 {
@@ -395,6 +399,7 @@ ul.sidebar-menu li a.active i {
 /* MAIN CONTENT CONFIGURATION */
 #main-content {
     margin-left: 210px;
+    margin-bottom: 100px;
 }
 
 .header, .footer {
@@ -2221,6 +2226,11 @@ label {
     background: #68dff0;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 
