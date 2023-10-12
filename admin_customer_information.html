@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Customer, Theme, Responsive, Fluid, Retina">
 
-    <title>CarpetIT - Customer Information (Customer)</title>
+    <title>CarpetIT - Customer Information (Admin)</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -37,7 +37,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="customer_main_menu.html" class="logo"><b>Zahra’s Carpet Paradise</b></a>
+            <a href="admin_main_menu.html" class="logo"><b>Zahra’s Carpet Paradise</b></a>
             <!--logo end-->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
@@ -57,34 +57,48 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
                   <p class="centered"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></p>
-              	  <h5 class="centered">Customer Name</h5>
+              	  <h5 class="centered">Admin Name</h5>
                   
                   <li class="mt">
-                      <a href="customer_main_menu.html">
+                      <a href="admin_main_menu.html">
                           <i class="fa fa-home"></i>
                           <span>Main Menu</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="active" href="customer_information.html">
+                      <a class="active" href="admin_customer_information.html">
                           <i class="fa fa-user"></i>
                           <span>Customer Information</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a href="customer_carpet.html">
+                      <a href="javascript:;" >
                           <i class="fa fa-cube"></i>
                           <span>Carpet</span>
                       </a>
-                  </li> 
+                      <ul class="sub">
+                          <li><a  href="admin_create_categories.html">Create Categories</a></li>
+                          <li><a  href="admin_create_items.html">Create Items</a></li>
+                      </ul>
+                  </li>  
                   
                   <li class="sub-menu">
-                      <a href="customer_shopping_cart.html" >
-                          <i class="fa fa-shopping-cart"></i>
-                          <span>Shopping Cart</span>
+                      <a href="admin_sales_dashboard.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Sales Dashboard</span>
                       </a>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>Charts</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="admin_morris.html">Morris</a></li>
+                      </ul>
                   </li>
 
               </ul>
