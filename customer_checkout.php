@@ -101,6 +101,31 @@
 <!-- **********************************************************************************************************************************************************
 MAIN CONTENT
 *********************************************************************************************************************************************************** -->
+<?php
+// 1. 数据库连接
+$servername = "localhost:3300";
+$username = "root";
+$password = "";
+$dbname = "spm_db";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// 2. 从数据库中获取数据
+$sql = "SELECT firstname, email, number1, saddress, baddress FROM users_info WHERE id = '2'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $customerName = $row['firstname'];
+    $customerEmail = $row['email'];
+    $customerPhone = $row['number1'];
+    $shippingAddress = $row['saddress'];
+    $billingAddress = $row['baddress'];
+} else {
+    echo "0 results";
+}
+?>
 <section id="main-content">
     <section class="wrapper">
         <div class="row">
@@ -118,32 +143,32 @@ MAIN CONTENT
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Customer Name</label>
                             <div class="col-sm-8">
-                                <p class="form-control-static">Customer Name</p>
+                                <p class="form-control-static"><?php echo $customerName; ?></p>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Email Address</label>
                             <div class="col-sm-8">
-                                <p class="form-control-static">customer@email.com</p>
+                                <p class="form-control-static"><?php echo $customerEmail; ?></p>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Phone Number</label>
                             <div class="col-sm-8">
-                                <p class="form-control-static">123-456-7890</p>
+                                <p class="form-control-static"><?php echo $customerPhone; ?></p>
                             </div>
                         </div>
                         <!-- Shipping and Billing Address (Read-only) -->
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Shipping Address</label>
                             <div class="col-sm-8">
-                                <p class="form-control-static">123 Shipping St, City, Zip Code</p>
+                                <p class="form-control-static"><?php echo $shippingAddress; ?></p>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Billing Address</label>
                             <div class="col-sm-8">
-                                <p class="form-control-static">123 Billing St, City, Zip Code</p>
+                                <p class="form-control-static"><?php echo $billingAddress; ?></p>
                             </div>
                         </div>
                     </div>
@@ -204,8 +229,19 @@ MAIN CONTENT
                         <label>Customer Notes</label>
                         <textarea class="form-control" name="customerNotes"></textarea>
                     </div>
+                    <form class="form-group" action = "sendemail.php" method="post">
+                        <div style = "display:none;">
+                            Email <input class="form-control" type = "email" name="email" value="stephenlhz123@gmail.com"><br>
+                            Subject <input class="form-control" type = "text" name="subject" value="Order Confirmation"><br>
+                            Message <input class="form-control" type = "text" name="message" value="Thank you for shopping with us!!"><br>
+                        </div>
+                            <button class="btn btn-info" type="submit" name="send">Confirm Order</button><br>
+                    </form>
+
                 </div>
+                
             </div>
+            
         </div>
     </section>
 </section>
