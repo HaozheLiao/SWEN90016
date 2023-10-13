@@ -180,7 +180,7 @@ if ($result->num_rows > 0) {
                     <h4 class="mb"><i class="fa fa-shopping-cart"></i> Order Information</h4>
                     <!-- Link to the Order Information Page -->
                     <div class="form-group">
-                        <a href="order_information.html" class="btn btn-info">View Shopping Cart</a>
+                        <a href="customer_shopping_cart.html" class="btn btn-info">View Shopping Cart</a>
                     </div>
 
                     <!-- Preferred Payment Method (Editable) -->
